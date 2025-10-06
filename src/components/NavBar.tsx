@@ -1,3 +1,11 @@
+import { NavMid } from "./NavMid";
+import { NavMobile } from "./NavMobile";
+
 export function NavBar() {
-  return <h1>Navbar</h1>;
+  return (
+    <>
+      <NavMid />
+      <NavMobile />
+    </>
+  );
 }
