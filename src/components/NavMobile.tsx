@@ -1,7 +1,7 @@
 import { MenuIcon, XIcon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import chapeu from "../../public/andre-formatura.svg";
+import chapeu from "../assets/andre-formatura.svg";
 
 export function NavMobile() {
   const [nav, setNav] = useState(false);
