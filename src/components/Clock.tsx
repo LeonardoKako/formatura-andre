@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 export function Clock() {
-  // 📅 Defina aqui a data-alvo (formato: Ano, Mês-1, Dia, Hora, Minuto)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const targetDate = new Date(2025, 11, 12, 10, 0, 0); // 20 de dezembro de 2025 às 20h
+  // (formato: Ano, Mês-1, Dia, Hora, Minuto)
 
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
@@ -44,34 +44,33 @@ export function Clock() {
     return () => clearInterval(interval);
   }, [targetDate]);
 
-  // 🎨 Estilos centralizados
   const cardStyle =
-    "w-24 h-24 rounded-xl bg-slate-300 text-slate-800 flex flex-col items-center justify-center gap-1 shadow-md";
+    "w-26 h-26 rounded-xl bg-emerald-200 text-emerald-900 flex flex-col items-center justify-center gap-1 shadow-md";
 
   return (
-    <section className='bg-slate-700 flex flex-col items-center justify-center gap-12 w-full p-16'>
-      <h1 className='text-4xl sm:text-5xl font-semibold text-slate-200 text-center tracking-wide'>
+    <section className='bg-emerald-900 flex flex-col items-center justify-center gap-12 w-full p-20'>
+      <h1 className='text-4xl sm:text-4xl text-emerald-200 text-center tracking-wide'>
         CONTAGEM REGRESSIVA
       </h1>
 
       <div className='flex flex-wrap items-center justify-center gap-8'>
         <div className={cardStyle}>
-          <p className='text-5xl font-bold'>{timeLeft.days}</p>
+          <h1 className='text-5xl font-medium'>{timeLeft.days}</h1>
           <p className='text-sm font-medium tracking-wide'>DIAS</p>
         </div>
 
         <div className={cardStyle}>
-          <p className='text-5xl font-bold'>{timeLeft.hours}</p>
+          <h1 className='text-5xl font-medium'>{timeLeft.hours}</h1>
           <p className='text-sm font-medium tracking-wide'>HORAS</p>
         </div>
 
         <div className={cardStyle}>
-          <p className='text-5xl font-bold'>{timeLeft.minutes}</p>
+          <h1 className='text-5xl font-medium'>{timeLeft.minutes}</h1>
           <p className='text-sm font-medium tracking-wide'>MINUTOS</p>
         </div>
 
         <div className={cardStyle}>
-          <p className='text-5xl font-bold'>{timeLeft.seconds}</p>
+          <h1 className='text-5xl font-medium'>{timeLeft.seconds}</h1>
           <p className='text-sm font-medium tracking-wide'>SEGUNDOS</p>
         </div>
       </div>
