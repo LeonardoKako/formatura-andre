@@ -10,12 +10,14 @@ export function Home() {
   return (
     <>
       <NavBar />
-      <SaveTheDate />
-      <Clock />
-      <About />
-      <Locations />
-      <ConfirmPresence />
-      <Footer />
+      <div className='flex flex-col justify-center items-center'>
+        <SaveTheDate />
+        <Clock />
+        <About />
+        <Locations />
+        <ConfirmPresence />
+        <Footer />
+      </div>
     </>
   );
 }
