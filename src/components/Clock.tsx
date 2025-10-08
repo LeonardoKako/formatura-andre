@@ -48,7 +48,7 @@ export function Clock() {
     "w-26 h-26 rounded-xl bg-emerald-200 text-emerald-900 flex flex-col items-center justify-center gap-1 shadow-md";
 
   return (
-    <section className='bg-emerald-900 flex flex-col items-center justify-center gap-12 w-full p-20'>
+    <section className='bg-emerald-900 flex flex-col items-center justify-center gap-12 w-full p-8 md:p-20'>
       <h1 className='text-4xl sm:text-4xl text-emerald-200 text-center tracking-wide'>
         CONTAGEM REGRESSIVA
       </h1>

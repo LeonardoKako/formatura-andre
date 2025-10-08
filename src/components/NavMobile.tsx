@@ -60,27 +60,30 @@ export function NavMobile() {
                 animate='visible'
                 className='flex flex-col mt-4 px-6 text-lg gap-3 text-slate-800 font-medium'
               >
-                {["Home", "Cerimônia", "Confirme sua presença"].map(
-                  (item, i) => (
-                    <motion.li
-                      key={item}
-                      custom={i}
-                      variants={itemVariants}
-                      className='p-1 cursor-pointer hover:translate-x-1 transition-transform'
-                    >
-                      {item}
-                    </motion.li>
-                  )
-                )}
+                {[
+                  "Home",
+                  "Cerimônia",
+                  "Lista de presentes",
+                  "Confirme sua presença",
+                ].map((item, i) => (
+                  <motion.li
+                    key={item}
+                    custom={i}
+                    variants={itemVariants}
+                    className='p-1 cursor-pointer hover:translate-x-1 transition-transform'
+                  >
+                    {item}
+                  </motion.li>
+                ))}
               </motion.ul>
             </motion.div>
 
             <motion.div
               onClick={() => setNav(false)}
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 0.5 }}
               animate={{ opacity: 0.4 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 1 }}
               className='flex-1 bg-black'
             ></motion.div>
           </motion.nav>

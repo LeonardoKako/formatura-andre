@@ -6,6 +6,7 @@ export function NavMid() {
       <ul className='flex gap-8 p-4 w-full justify-center text-xl italic font-medium text-emerald-80000 text-center'>
         <li className={liStyle}>HOME</li>
         <li className={liStyle}>CERIMÔNIA</li>
+        <li className={liStyle}>LISTA DE PRESENTES</li>
         <li className={liStyle}>CONFIRME SUA PRESENÇA</li>
       </ul>
     </header>
