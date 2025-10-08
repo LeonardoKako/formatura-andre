@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <div className='p-12 text-center text-md'>
+    <div className='p-8 text-center text-md text-emerald-950 md:text-lg lg:text-xl'>
       <p>
         "Queridos amigos e família, minha formatura está chegando e já é motivo
         de imensa alegria. Como decidi investir nesse momento especial por conta
