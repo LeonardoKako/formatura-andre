@@ -1,8 +1,8 @@
 export function About() {
   return (
     <div
-      className='p-4 pt-4 md:p-12 md:px-30 text-center border-t-4 border-emerald-800 w-[80%]
-    text-emerald-950 md:text-lg lg:text-xl'
+      className='p-10 pt-6 sm:p-12 md:px-30 text-center border-t-4 border-emerald-800 w-[80%] md:w-[85%] lg:w-[90%]
+    text-emerald-950 sm:text-lg md:text-xl lg:text-2xl font-medium'
     >
       <p>
         "Queridos amigos e família, minha formatura está chegando e já é motivo
