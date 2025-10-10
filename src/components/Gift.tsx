@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 type Props = {
   img: string;
   title: string;
@@ -18,6 +20,7 @@ export function Gift({ img, title, valor, desc }: Props) {
       <button
         className='w-[80%] p-2 bg-emerald-900 text-emerald-300 rounded cursor-pointer
         hover:bg-emerald-300 hover:text-emerald-950 transition font-bold text-lg'
+        onClick={() => toast.success("Mensagem engraçada")}
       >
         Presentear
       </button>
