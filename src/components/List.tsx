@@ -9,8 +9,8 @@ import opalaDinheiro from "../assets/gifts/opala-dinheiro.png";
 
 export function List() {
   return (
-    <section className='w-full p-8 sm:p-12'>
-      <div className='w-full flex flex-wrap gap-6 md:gap-10 items-center justify-center'>
+    <section className='w-full p-8 sm:p-12 md:p-18 lg:p-30'>
+      <div className='w-full flex flex-wrap gap-6 md:gap-10 items-center md:items-start justify-center'>
         <Gift
           img={opala}
           title='Passe vitalício pro mecânico do Opala'
