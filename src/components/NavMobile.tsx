@@ -38,7 +38,7 @@ export function NavMobile() {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "tween", duration: 0.4 }}
-              className='flex flex-col h-full w-[70%] max-w-[300px] bg-white relative shadow-xl'
+              className='flex flex-col h-full w-[70%] max-w-[300px] bg-white relative shadow-xl z-20'
             >
               <img
                 src={chapeu}
@@ -84,7 +84,7 @@ export function NavMobile() {
               animate={{ opacity: 0.4 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              className='flex-1 bg-black'
+              className='flex-1 bg-black absolute top-0 left-0 w-full h-full z-1'
             ></motion.div>
           </motion.nav>
         )}

@@ -13,8 +13,8 @@ export function Home() {
       <NavBar />
       <div className='flex flex-col justify-center items-center'>
         <SaveTheDate />
-        <Clock />
         <About />
+        <Clock />
         <Locations
           title='MISSA'
           desc='A missa será realizada em tal lugar tal hora'
