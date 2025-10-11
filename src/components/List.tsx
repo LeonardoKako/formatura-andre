@@ -3,13 +3,14 @@ import opala from "../assets/gifts/opala.png";
 import pensando from "../assets/gifts/pensando.png";
 import ancelloti from "../assets/gifts/ancelloti.png";
 import andreVale from "../assets/gifts/andre-vale.png";
+import inter from "../assets/gifts/inter.png";
 import andreReceita from "../assets/gifts/andre-receita.png";
 import avisoPix from "../assets/gifts/aviso-pix.png";
 import opalaDinheiro from "../assets/gifts/opala-dinheiro.png";
 
 export function List() {
   return (
-    <section className='w-full p-8 sm:p-12 md:p-18 lg:p-30'>
+    <section className='w-full p-8 sm:p-12 md:p-18 lg:p-30' id='lista'>
       <div className='w-full flex flex-wrap gap-6 md:gap-10 items-center md:items-start justify-center'>
         <Gift
           img={opala}
@@ -33,24 +34,31 @@ export function List() {
         />
 
         <Gift
-          img={andreVale}
+          img={inter}
           title='Plano de saúde emocional do torcedor colorado'
           valor='R$ 299,99'
           desc='Cobre todas as fases do sofrimento: da esperança pré-jogo ao luto pós-rodada.'
         />
 
         <Gift
-          img={andreReceita}
-          title='Vale atestado médico premium'
+          img={andreVale}
+          title='Vale-atestado médico premium'
           valor='R$ 149,99'
           desc="Ideal pra emergências do tipo: 'não vou trabalhar porque tô me recuperando da formatura'."
         />
 
         <Gift
-          img={opalaDinheiro}
-          title='Vale receita personalizada'
+          img={andreReceita}
+          title='Vale-receita personalizada'
           valor='R$ 89,99'
           desc="Pra quando o amigo pede 'só um remedinho leve' e você finge que é tudo protocolo."
+        />
+
+        <Gift
+          img={opalaDinheiro}
+          title='Fundo de manutenção do Opala'
+          valor='R$ 499,99'
+          desc='Cada real ajuda a manter viva a lenda sobre quatro rodas. Afinal, clássico não se abandona, se restaura.'
         />
 
         <Gift

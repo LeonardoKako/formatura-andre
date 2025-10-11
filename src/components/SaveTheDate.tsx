@@ -2,7 +2,7 @@ import fotoAndre from "../assets/andre-foto-em-pé.png";
 
 export function SaveTheDate() {
   return (
-    <section className='flex p-8 justify-between pb-0'>
+    <section className='flex p-8 justify-between pb-0' id='home'>
       <div className='text-center flex flex-col justify-around w-[65%] sm:w-[75%] sm:py-6 md:py-10'>
         <h2 className='mt-8 text-xl sm:text-3xl md:text-4xl lg:text-6xl font-medium italic text-emerald-800'>
           FORMATURA DE MEDICINA

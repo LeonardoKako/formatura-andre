@@ -15,16 +15,18 @@ export function Home() {
         <SaveTheDate />
         <About />
         <Clock />
-        <Locations
-          title='MISSA'
-          desc='A missa será realizada em tal lugar tal hora'
-          src='https://www.google.com/maps?q=rod.+tertuliano+brito+xavier,+688&z=14&output=embed'
-        />
-        <Locations
-          title='FESTA'
-          desc='A festa será realizada em tal lugar tal hora'
-          src='https://www.google.com/maps?q=rod.+tertuliano+brito+xavier,+688&z=14&output=embed'
-        />
+        <section id='cerimonia' className='w-full'>
+          <Locations
+            title='MISSA'
+            desc='A missa será realizada em tal lugar tal hora'
+            src='https://www.google.com/maps?q=rod.+tertuliano+brito+xavier,+688&z=14&output=embed'
+          />
+          <Locations
+            title='FESTA'
+            desc='A festa será realizada em tal lugar tal hora'
+            src='https://www.google.com/maps?q=rod.+tertuliano+brito+xavier,+688&z=14&output=embed'
+          />
+        </section>
         <List />
         <ConfirmPresence />
         <Footer />
