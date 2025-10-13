@@ -1,9 +1,30 @@
+import { toast } from "react-toastify";
 import qrPix from "../assets/gifts/andre-vale.png";
 
 export function ConfirmPresence() {
+  const pixKey =
+    "00020126580014BR.GOV.BCB.PIX0114+55489999999995204000053039865802BR5912Andre Vale6009FLORIANOP702BR62290525PIXANDREVALE1234567890123456304ABCD";
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(pixKey);
+      toast.success("Chave Pix copiada com sucesso! ", {
+        position: "top-center",
+        autoClose: 2000,
+        theme: "light",
+      });
+    } catch {
+      toast.error("Erro ao copiar a chave Pix ❌", {
+        position: "top-center",
+        autoClose: 2000,
+        theme: "colored",
+      });
+    }
+  };
+
   return (
     <section
-      className='w-full px-12 py-4 text-center flex flex-col items-center gap-4'
+      className='w-full px-12 py-8 text-center flex flex-col items-center gap-4'
       id='confirmacao'
     >
       <h1 className='text-3xl text-emerald-950 font-semibold'>
@@ -19,6 +40,13 @@ export function ConfirmPresence() {
         alt='QR Code Pix'
         className='w-48 h-48 rounded-lg shadow-md border border-emerald-200'
       />
+
+      <button
+        onClick={handleCopy}
+        className='bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 cursor-pointer rounded-lg font-medium transition-all shadow-sm'
+      >
+        Copiar chave Pix
+      </button>
 
       <a
         href='https://wa.me/5548999999999?text=Olá! Quero confirmar minha presença 🎉'
