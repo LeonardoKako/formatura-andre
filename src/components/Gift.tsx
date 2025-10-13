@@ -36,9 +36,34 @@ export function Gift({ img, title, valor, desc }: Props) {
     });
   };
 
+  const pixKey =
+    "00020126580014BR.GOV.BCB.PIX0114+55489999999995204000053039865802BR5912Andre Vale6009FLORIANOP702BR62290525PIXANDREVALE1234567890123456304ABCD";
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(pixKey);
+      toast.success("Chave Pix copiada com sucesso! ", {
+        position: "top-center",
+        autoClose: 2000,
+        theme: "light",
+      });
+    } catch {
+      toast.error("Erro ao copiar a chave Pix ❌", {
+        position: "top-center",
+        autoClose: 2000,
+        theme: "colored",
+      });
+    }
+  };
+
+  function handleClick() {
+    handleCopy();
+    handleGift(title);
+  }
+
   return (
     <div
-      className='flex flex-col items-center justify-between gap-2 w-full sm:h-[440px]
+      className='flex flex-col items-center justify-between gap-2 w-full h-[400px] sm:h-[440px]
     border-1 border-emerald-950 rounded p-3 max-w-56 text-center'
     >
       <div className='flex flex-col justify-around h-full'>
@@ -48,11 +73,11 @@ export function Gift({ img, title, valor, desc }: Props) {
         <h2 className='font-bold text-emerald-950'>{valor}</h2>
       </div>
       <button
-        className='w-[80%] p-2 bg-emerald-900 text-emerald-300 rounded cursor-pointer
-        hover:bg-emerald-300 hover:text-emerald-950 transition font-bold text-lg'
-        onClick={() => handleGift(title)}
+        className='bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg 
+        cursor-pointer text-lg md:text-xl font-medium transition-all'
+        onClick={() => handleClick()}
       >
-        Presentear
+        Copiar chave PIX
       </button>
     </div>
   );

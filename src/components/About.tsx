@@ -6,10 +6,14 @@ export function About() {
     >
       <p>
         "Queridos amigos e família, minha formatura está chegando e já é motivo
-        de imensa alegria. Como decidi investir nesse momento especial por conta
-        própria, se pensarem em presente, ficarei muito feliz em receber uma
-        contribuição para ajudar nos custos da festa. O carinho e a presença de
-        vocês, no entanto, já são o maior presente que eu poderia ganhar."
+        de imensa alegria. Depois de anos de dedicação, aprendizado e superação,
+        é hora de celebrar essa conquista com cada um de vocês. Agradeço
+        imensamente por cada momento vivido e que essa formatura seja apenas o
+        começo de muitas novas conquistas! Como decidi investir nesse momento
+        especial por conta própria, se pensarem em presente, ficarei muito feliz
+        em receber uma contribuição para ajudar nos custos da festa. O carinho e
+        a presença de vocês, claro, já são o maior presente que eu poderia
+        ganhar."
       </p>
     </div>
   );
