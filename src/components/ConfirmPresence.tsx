@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import qrPix from "../assets/gifts/andre-vale.png";
+import qrPix from "../assets/qrCode.png";
 
 export function ConfirmPresence() {
   const pixKey =
