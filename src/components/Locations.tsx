@@ -1,23 +1,25 @@
-type Props = {
-  title: string;
-  desc: string;
-  src: string;
-};
+import { Location } from "./Location";
 
-export function Locations({ title, desc, src }: Props) {
+export function Locations() {
   return (
-    <div className='w-full p-8 sm:p-12 md:px-20 text-center items-center flex flex-col gap-3'>
-      <h1 className='text-3xl text-emerald-700'>{title}</h1>
-      <p className='text-xl text-emerald-950'>{desc}</p>
+    <section id='cerimonia' className='w-full'>
+      <Location
+        title='MISSA DE FORMATURA'
+        desc='Basílica Santuário do Sagrado Coração Misericordioso de Jesus. Horário: X'
+        src='https://www.google.com/maps?q=Basílica+Santuário+do+Sagrado+Coração+Misericordioso+de+Jesus,+Içara+-+SC&z=14&output=embed'
+      />
 
-      <div className='w-full lg:w-[80%] h-0 pb-[70%] sm:pb-[50%] relative'>
-        <iframe
-          className='absolute top-0 left-0 w-full h-full rounded-lg shadow-lg'
-          src={src}
-          loading='lazy'
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
+      <Location
+        title='COLAÇÃO DE GRAU'
+        desc='AM Master Hall. Horário: X'
+        src='https://www.google.com/maps?q=AM+Master+Hall,+Criciúma+-+SC&z=14&output=embed'
+      />
+
+      <Location
+        title='RECEPÇÃO'
+        desc='Espaço Flor de Lis. Horário: X'
+        src='https://www.google.com/maps?q=Espaço+Flor+de+Lis,+Criciúma+-+SC&z=14&output=embed'
+      />
+    </section>
   );
 }
