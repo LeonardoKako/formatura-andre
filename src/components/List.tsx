@@ -15,49 +15,49 @@ export function List() {
         <Gift
           img={opala}
           title='Passe vitalício pro mecânico do Opala'
-          valor='R$ 5.999,99'
+          valor='R$ 150,00'
           desc='Pra garantir que o motor do clássico nunca te deixe na mão. Um investimento na verdadeira máquina do tempo.'
         />
 
         <Gift
           img={pensando}
           title='Curso de paciência pra dono de carro antigo'
-          valor='R$ 399,99'
+          valor='R$ 200,00'
           desc="Inclui controle respiratório, zen e um cafezinho enquanto o mecânico 'só dá uma olhadinha'."
         />
 
         <Gift
           img={ancelloti}
           title='Vale Ancelloti pro Inter'
-          valor='R$ 99,99'
+          valor='R$ 250,00'
           desc='Ajude o Colorado a finalmente ter um técnico com sangue nos olhos e tática de campeão. É pelo bem da nação vermelha!'
         />
 
         <Gift
           img={inter}
           title='Plano de saúde emocional do torcedor colorado'
-          valor='R$ 299,99'
+          valor='R$ 300,00'
           desc='Cobre todas as fases do sofrimento: da esperança pré-jogo ao luto pós-rodada.'
         />
 
         <Gift
           img={andreVale}
           title='Vale-atestado médico premium'
-          valor='R$ 149,99'
+          valor='R$ 400,00'
           desc="Ideal pra emergências do tipo: 'não vou trabalhar porque tô me recuperando da formatura'."
         />
 
         <Gift
           img={andreReceita}
           title='Vale-receita personalizada'
-          valor='R$ 89,99'
+          valor='R$ 500,00'
           desc="Pra quando o amigo pede 'só um remedinho leve' e você finge que é tudo protocolo."
         />
 
         <Gift
           img={opalaDinheiro}
           title='Fundo de manutenção do Opala'
-          valor='R$ 499,99'
+          valor='R$ 600,00'
           desc='Cada real ajuda a manter viva a lenda sobre quatro rodas. Afinal, clássico não se abandona, se restaura.'
         />
 
