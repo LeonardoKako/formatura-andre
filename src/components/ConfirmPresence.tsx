@@ -38,12 +38,12 @@ export function ConfirmPresence() {
       <img
         src={qrPix}
         alt='QR Code Pix'
-        className='w-48 h-48 rounded-lg shadow-md border border-emerald-200'
+        className='w-48 h-48 sm:w-60 sm:h-60 lg:w-72 lg:h-72 rounded-lg shadow-md border border-emerald-200'
       />
 
       <button
         onClick={handleCopy}
-        className='bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 cursor-pointer rounded-lg font-medium transition-all shadow-sm'
+        className='bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 cursor-pointer rounded-lg font-medium md:text-lg transition-all shadow-sm'
       >
         Copiar chave Pix
       </button>
@@ -51,7 +51,7 @@ export function ConfirmPresence() {
       <a
         href='https://wa.me/5548999999999?text=Olá! Quero confirmar minha presença 🎉'
         target='_blank'
-        className='bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg text-lg font-medium transition-all'
+        className='bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg text-lg md:text-xl font-medium transition-all'
       >
         Confirmar no WhatsApp
       </a>

@@ -26,8 +26,8 @@ export function NavMobile() {
   return (
     <header className='flex md:hidden w-full fixed top-0 left-0 z-50'>
       <div
-        onClick={() => setNav(true)}
-        className='fixed top-5 right-5 z-50 cursor-pointer bg-white rounded-full p-1 shadow-md'
+        onClick={() => setNav(!nav)}
+        className='fixed top-5 right-5 z-50 cursor-pointer bg-white rounded-full p-2 shadow-md'
       >
         <MenuIcon size={40} />
       </div>
