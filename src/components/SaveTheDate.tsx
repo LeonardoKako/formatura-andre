@@ -14,7 +14,8 @@ export function SaveTheDate() {
           ANDRÉ RIBEIRO BITTENCOURT
         </h1>
         <h3 className='text-2xl sm:text-4xl lg:text-6xl font-medium italic mt-4 text-emerald-900 mb-3'>
-          11 . 12 . 2025
+          11 <span className='text-lg sm:text-2xl lg:text-4xl'>&</span> 12 / 12
+          / 2025
         </h3>
       </div>
       <div className='w-[35%] flex items-end sm:w-[25%]'>
