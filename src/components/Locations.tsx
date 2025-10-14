@@ -5,20 +5,26 @@ export function Locations() {
     <section id='cerimonia' className='w-full'>
       <Location
         title='MISSA DE FORMATURA'
-        desc='Basílica Santuário do Sagrado Coração Misericordioso de Jesus. Horário: X'
+        desc='Basílica Santuário do Sagrado Coração Misericordioso de Jesus'
         src='https://www.google.com/maps?q=Basílica+Santuário+do+Sagrado+Coração+Misericordioso+de+Jesus,+Içara+-+SC&z=14&output=embed'
+        date='11/12/2025'
+        hour='19h00'
       />
 
       <Location
         title='COLAÇÃO DE GRAU'
-        desc='AM Master Hall. Horário: X'
+        desc='AM Master Hall'
         src='https://www.google.com/maps?q=AM+Master+Hall,+Criciúma+-+SC&z=14&output=embed'
+        date='12/12/2025'
+        hour='18h00'
       />
 
       <Location
         title='RECEPÇÃO'
-        desc='Espaço Flor de Lis. Horário: X'
+        desc='Espaço Flor de Lis'
         src='https://www.google.com/maps?q=Espaço+Flor+de+Lis,+Criciúma+-+SC&z=14&output=embed'
+        date='12/12/2025'
+        hour='21h00'
       />
     </section>
   );
